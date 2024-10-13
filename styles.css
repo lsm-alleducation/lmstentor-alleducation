@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #f0f4f8; /* Latar belakang terang untuk kesan elegan */
+}
+
+header {
+  background-color: #1a3e7c; /* Biru Tua */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px; /* Atur ukuran logo sesuai kebutuhan */
+  height: auto;
+  margin-right: 20px; /* Jarak antara logo dan judul */
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.login-register {
+  margin-left: auto; /* Memindahkan elemen ini ke kanan */
+}
+
+.login-register a {
+  color: #fff; /* Teks berwarna putih */
+  text-decoration: none; /* Tanpa garis bawah */
+  margin-left: 20px; /* Jarak antara tautan */
+  padding: 5px 10px; /* Padding untuk mempercantik tampilan */
+  border: 1px solid #fff; /* Border putih */
+  border-radius: 5px; /* Sudut melengkung */
+  transition: background-color 0.3s, color 0.3s; /* Efek transisi */
+}
+
+.login-register a:hover {
+  background-color: #fff; /* Latar belakang putih saat hover */
+  color: #1a3e7c; /* Biru Tua */
+}
+
+.welcome {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #009688; /* Biru Muda */
+}
+
+.welcome h1 {
+  font-size: 48px;
+  color: #fff;
+}
+
+.announcement {
+  background-color: #ffcc00; /* Warna cerah untuk pengumuman */
+  padding: 10px;
+}
+
+.announcement marquee {
+  font-size: 20px;
+}
+
+.activity-photos {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.activity-title {
+  color: #1a3e7c; /* Warna Biru untuk judul "Kegiatan Kami" */
+  margin-bottom: 20px;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.features {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features-title {
+  color: #1a3e7c; /* Warna Biru untuk judul fitur */
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: white;
+  color: #1a3e7c; /* Biru Tua */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #1a3e7c; /* Biru Tua */
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
